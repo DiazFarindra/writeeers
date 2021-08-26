@@ -1,0 +1,562 @@
+/* Font Family */
+@font-face {
+    font-family: 'gilroy-heavy';
+    src: url('../font/Gilroy-Heavy.ttf');
+}
+@font-face {
+    font-family: 'gilroy-bold';
+    src: url('../font/Gilroy-Bold.ttf');
+}
+@font-face {
+    font-family: 'gilroy-medium';
+    src: url('../font/Gilroy-Medium.ttf');
+}
+@font-face {
+    font-family: 'gilroy-light';
+    src: url('../font/Gilroy-Light.ttf');
+}
+@font-face {
+    font-family: 'gilroy-regular';
+    src: url('../font/Gilroy-Regular.ttf');
+}
+
+
+/* Custom Css */
+.ui.menu {
+    box-shadow: none;
+    border: none;
+}
+
+.mt-3rem {
+    margin-top: 3rem;
+}
+
+.ui.pt-8rem {
+    padding-top: 8rem;
+}
+
+.warna-oren {
+    color: #FB6400;
+}
+
+
+/* Navbar */
+.item.padding-10px a {
+    font-family: gilroy-regular;
+}
+
+.ui.logo-navbar.image {
+    width: 8rem;
+    height: auto;
+}
+
+.ui.tertiary.button {
+    transition: .2s ease !important;
+}
+
+.ui.custom.button {
+    font-weight: 700;
+    background-color: #FB6400;
+    color: #ffffff;
+    transition: .2s ease;
+}
+
+.ui.custom.button:hover {
+    transition: .2s ease;
+    background-color: transparent;
+    box-shadow: 0 0 0 1px #FB6400 inset;
+    color: #FB6400;
+}
+
+.padding-10px {
+    padding: 10px !important;
+}
+
+.ui.b-transparent {
+    /* background: rgba(255, 255, 255, 0.95); */
+    box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.ui.padding-bt-nav {
+    padding: 10px 40px 10px 40px !important;
+}
+
+#navbar .item.writer-user {
+    font-family: gilroy-medium;
+}
+
+#navbar .item.writer-user img {
+    margin-left: .5rem;
+}
+
+#navbar .ui.search input {
+    font-family: gilroy-regular;
+}
+
+#navbar .ui.search .title {
+    font-family: gilroy-regular;
+}
+
+
+/** Hero Section */
+.ui.hero.container {
+    width: 1441px !important;
+}
+
+.custom1-color-bg {
+    background-color: #e9f4f5 !important;
+}
+
+.border-radius-10px {
+    border-radius: 10px !important;
+}
+
+.custom1-box-shadow {
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.13);
+}
+
+.ui.hero.image {
+    width: 50rem;
+    height: auto;
+}
+
+.custom-hero-text {
+    padding: 10rem 0rem 0rem 0rem;
+}
+
+.custom-hero-text p:nth-child(1) {
+    font-family: gilroy-bold !important;
+    margin-bottom: -30px;
+}
+
+.custom-hero-text .ui.main.header {
+    font-family: gilroy-heavy !important;
+    font-size: 13rem !important;
+}
+
+.ui.custom-hero-button {
+    font-weight: 700;
+    font-family: gilroy-regular;
+    padding: 18px 80px !important;
+    background-color: transparent;
+    box-shadow: 0 0 0 1px #FB6400;
+    color: #FB6400;
+    transition: .2s ease;
+}
+
+.ui.custom-hero-button:hover {
+    transition: .2s ease;
+    background-color: #FB6400;
+    color: #ffffff;
+}
+
+.small.hero.header {
+    font-family: gilroy-medium !important;
+}
+
+.small.hero.header a {
+    color: #FB6400;
+}
+
+.fluid.margin-top.image {
+    margin-top: -100px;
+    z-index: -1;
+}
+
+.horizontal.list .item {
+    font-family: gilroy-regular !important;
+    font-size: 20px !important;
+}
+
+.horizontal.list .item i {
+    color: #FB6400;
+    font-size: 25px;
+    margin-right: -15px !important;
+}
+
+.horizontal.list .item .header {
+    font-family: gilroy-medium !important;
+}
+
+img.ui.move-updown.image {
+    animation: mover 2s infinite alternate;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+
+/* First Main Content */
+.ui.first-header {
+    font-family: gilroy-bold !important;
+    margin: 8rem 0 0 8rem !important;
+    font-size: 45px !important;
+}
+
+.ui.first-header a {
+    font-family: gilroy-regular !important;
+    color: #FB6400 !important;
+}
+
+.ui.second-header {
+    font-family: gilroy-bold !important;
+    margin: 8rem 8rem 0 0 !important;
+    font-size: 45px !important;
+}
+
+.ui.second-header .sub.header {
+    margin-top: 15px;
+}
+
+.ui.second-header a {
+    font-family: gilroy-regular !important;
+    color: #FB6400 !important;
+}
+
+
+/* Footer Section */
+.custom-footer-text {
+    padding: 10rem 0rem 0rem 0rem;
+}
+
+.custom-footer-text p:nth-child(1) {
+    font-family: gilroy-bold !important;
+    font-size: 60px !important;
+}
+
+.ui.custom-footer-button {
+    font-family: gilroy-regular;
+    font-weight: 700;
+    padding: 18px 80px !important;
+    margin-bottom: 100px;
+    background-color: transparent;
+    box-shadow: 0 0 0 1px #FB6400;
+    color: #FB6400;
+    transition: .2s ease;
+}
+
+.ui.custom-footer-button:hover {
+    transition: .2s ease;
+    background-color: #FB6400;
+    color: #ffffff;
+}
+
+.ui.down-footer {
+    margin: 5em 0em 0em;
+    padding: 5em 0em;
+}
+
+.ui.down-footer .four.wide.column .header {
+    font-family: gilroy-bold !important;
+}
+
+.ui.down-footer .four.wide.column a {
+    font-family: gilroy-regular !important;
+}
+
+.ui.down-footer .eight.wide.column .header {
+    font-family: gilroy-bold !important;
+}
+
+.ui.down-footer .eight.wide.column p {
+    font-family: gilroy-regular !important;
+}
+
+.ui.down-footer img {
+    width: 180px;
+    height: auto;
+}
+
+.ui.down-footer .ui.mini.header {
+    font-family: gilroy-light;
+    margin-top: 10px;
+}
+
+
+/* Sign IN Section */
+#img-login {
+    margin-left: -60px;
+}
+
+.ui.signin-section .ui.form {
+    margin-top: 30px;
+    font-family: gilroy-bold;
+}
+
+.ui.signin-section .ui.form .field {
+    margin-top: 30px;
+}
+
+.ui.signin-section .ui.form .field:nth-child(3) .field {
+    margin-top: 0px;
+}
+
+.ui.submit.button {
+    margin-top: 10px !important;
+}
+
+
+/* Content App Section */
+#jumbotron .ui.inverted.custom.segment {
+    background: rgb(241, 241, 241);
+}
+
+#jumbotron .ui.header {
+    font-family: gilroy-bold;
+    font-size: 4.5rem;
+    padding: 7rem 0 0 6rem;
+}
+
+#jumbotron .sub.header {
+    font-size: 1.3rem;
+}
+
+#jumbotron .ui.tertiary.button {
+    font-family: gilroy-regular;
+    color: #FB6400;
+}
+
+#main .ui.divider.ontop.header {
+    font-family: gilroy-regular;
+    margin: 5rem auto 2rem auto;
+}
+
+#main .ui.divider.onside.header {
+    font-family: gilroy-regular;
+}
+
+#main .ui.inverted.custom.segment {
+    background: rgb(241, 241, 241);
+}
+
+#main .ui.basic.down-count.segment {
+    margin-top: -3rem;
+}
+
+#main .ui.basic.segment img {
+    object-fit: cover;
+    width: 100%;
+    height: 26vh;
+}
+
+#main .ui.large.header a {
+    font-family: gilroy-regular;
+    color: #000000;
+    transition: .2s ease;
+}
+
+#main .ui.large.header a:hover {
+    transition: .1s ease;
+    color: #FB6400;
+}
+
+#main .sub.header p {
+    font-family: gilroy-regular;
+    margin-top: 1rem;
+    white-space: inherit;
+    width: 5rem auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#main .ui.small.header {
+    font-family: gilroy-regular;
+}
+
+#main .ui.small.header a {
+    color: #000000;
+}
+
+#main .ui.small.header div {
+    font-weight: 700;
+}
+
+#popularMenu .ui.card {
+    background: transparent;
+}
+
+#popularMenu .ui.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 18vh;
+}
+
+#popularMenu .ui.medium.header a {
+    font-family: gilroy-regular;
+    font-size: 1.1rem;
+    color: #000000;
+    transition: .2s ease;
+}
+
+#popularMenu .ui.medium.header a:hover {
+    transition: .1s ease;
+    color: #FB6400;
+}
+
+#popularMenu .ui.small.header {
+    font-family: gilroy-regular;
+}
+
+#popularMenu .ui.small.header a {
+    color: #000000;
+    font-size: .8rem;
+}
+
+#popularMenu .ui.small.header div {
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+
+/* VIEW CONTENT */
+#contentView .ui.header {
+    font-family: gilroy-regular;
+    font-size: 2.8rem;
+}
+
+#contentView .writer-user {
+    font-family: gilroy-medium;
+    margin: 2rem auto;
+}
+
+#contentView .writer-user img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: .5rem;
+}
+
+#contentView img {
+    object-fit: cover;
+    width: 100%;
+    height: 65vh;
+}
+
+#contentView .main-content {
+    margin: 3rem auto;
+    font-family: gilroy-regular;
+    font-size: 1.5rem;
+}
+
+#contentView .main-content h1,h2,h3,h4,h5,h6 {
+    font-family: gilroy-regular;
+}
+
+#contentView .ui.divider.header {
+    font-family: gilroy-regular;
+    margin: 10rem auto 2rem auto;
+    font-size: 1.5rem;
+}
+
+#contentView .ui.grid {
+    margin-bottom: 5rem;
+}
+
+#contentView .ui.card {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+#contentView .column .header {
+    font-family: gilroy-regular;
+    font-size: 1.5rem;
+    transition: .3 ease;
+}
+
+#contentView .column .header:hover {
+    transition: .3 ease;
+    color: #FB6400;
+}
+
+#contentView .column img {
+    object-fit: cover;
+    width: 100%;
+    height: 30vh;
+}
+
+#contentView .column .ui.large.header {
+    font-size: 1.5rem;
+}
+
+
+/* User Section */
+#profile .header {
+    font-family: gilroy-regular;
+}
+
+#profile img {
+    width: 10rem;
+    height: 10rem;
+    margin-left: 15rem;
+}
+
+#profile .ui.button {
+    font-family: gilroy-light;
+}
+
+#yourPost .sixteen.wide.column:nth-child(1) .ui.header {
+    font-family: gilroy-regular;
+}
+
+#yourPost {
+    margin-top: 5rem;
+}
+
+#yourPost .sixteen.wide.column:nth-child(2) {
+    font-family: gilroy-regular;
+    margin-top: 1.5rem;
+}
+
+#yourPost .sixteen.wide.column:nth-child(2) .ui.header {
+    font-family: gilroy-regular;
+}
+
+#profileForm {
+    font-family: gilroy-regular;
+}
+
+#profileForm .ui.button {
+    font-family: gilroy-regular;
+}
+
+#profileForm label {
+    font-weight: bold;
+}
+
+#profileForm img {
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+}
+
+#search .ui.input input {
+    font-family: gilroy-medium;
+}
+
+/* ? SIGN IN GOOGLE BUTTON ? */
+ /* Google Identity and Google+ Sign in buttons */
+ /* https://developers.google.com/+/branding-guidelines */
+
+.google-button__icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1rem;
+  height: 1rem;
+  box-sizing: border-box;
+}
+
+.google-button__text {
+    font-family: gilroy-bold;
+    padding-left: .5rem;
+}
+
+
+
+/* ! RESPONSIVE CSS ! */
