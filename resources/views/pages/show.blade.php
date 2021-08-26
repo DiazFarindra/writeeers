@@ -42,18 +42,19 @@
 
         <div class="ui three column grid">
 
-            @if (count($randomStory) > 0)
-                @foreach ($randomStory as $randstory)
-                    <div class="column">
-                        <div class="ui link card">
-                            <a href="{{ url('/', $randstory->user->name).'/'.$randstory->title }}" class="ui image">
-                                <img src="/storage/images/{!! $randstory->image !!}">
-                            </a>
-                            <a href="{{ url('/', $randstory->user->name).'/'.$randstory->title }}" class="ui header">{!! \Illuminate\Support\Str::of($randstory->title)->replace('-', ' ') !!}</a>
+                @isset($randomStory)
+                    @forelse ($randomStory as $randstory)
+                        <div class="column">
+                            <div class="ui link card">
+                                <a href="{{ url('/', $randstory->user->name).'/'.$randstory->title }}" class="ui image">
+                                    <img src="/storage/images/{!! $randstory->image !!}">
+                                </a>
+                                <a href="{{ url('/', $randstory->user->name).'/'.$randstory->title }}" class="ui header">{!! \Illuminate\Support\Str::of($randstory->title)->replace('-', ' ') !!}</a>
+                            </div>
                         </div>
-                    </div>
-                @endforeach
-            @endif
+                    @empty
+                    @endforelse
+                @endisset($randomStory)
 
         </div>
 
@@ -84,8 +85,10 @@
                 <p>made with <i class="heart small icon"></i> by <a href="https://instagram/diazfarindra_">Diaz
                         Farindra</a> | &copy;
                     <script>
-                        document.write(new Date().getUTCFullYear())
-                    </script> Writeeers. All rights reserved.</p>
+                        document.write(new Date().getUTCFullYear());
+                    </script>
+                    Writeeers. All rights reserved.
+                </p>
             </div>
         </div>
     </div>

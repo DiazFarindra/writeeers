@@ -181,7 +181,7 @@ class MainController extends Controller
         */
 
         // Get all data and randomize the data request, limit = 3 Request
-        $randomStory = Main::all()->random(3);
+        $randomStory = Main::limit(3)->get();
 
 
         // "main" argument is Sending the data belongs it data Id
